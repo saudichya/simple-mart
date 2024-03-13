@@ -14,14 +14,14 @@ pipeline {
 		stage('Build'){
 			steps {
 				echo "Build stage"
-				sh "./gradlew build -DskipTests"
+				bat "./gradlew build -DskipTests"
 			}
 		}
 
 		stage('Test'){
 			steps{
 				echo "Test stage"
-				sh "./gradlew test"
+				bat "./gradlew test"
 			}
 		}
 
